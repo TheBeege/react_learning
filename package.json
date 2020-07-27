@@ -1,0 +1,10 @@
+{
+  "name": "react_learning",
+  "version": "0.0.1",
+  "description": "Practicing React",
+  "main": "index.js",
+  "repository": "https://github.com/TheBeege/react_learning",
+  "author": "Beege",
+  "license": "MIT",
+  "private": true
+}
