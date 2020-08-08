@@ -4,8 +4,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from 'styled-components';
 import {Component} from "react/cjs/react.production.min";
+import TournamentTeam from "./TournamentTeam";
 
-const StyledTournamentTeam = styled.div`
+const StyledTournamentBracket = styled.div`
 background-color: black;
 width: 10em;
 height: 4em;
@@ -17,20 +18,10 @@ border-color: white;
 border-width: 0.1em;
 `;
 
-const Logo = styled.img`
-height: 3em;
-width: 3em;
-margin-left: 1em;
-margin-right: 1em;
-border-radius: 50%;
+const StyledSvgParent = styled.svg`
 `;
 
-const TeamName = styled.span`
-color: white;
-font-family: "Verdana";
-`;
-
-export default class TournamentTeam extends Component {
+export default class TournamentBracket extends Component {
 
     constructor() {
         super();
@@ -49,17 +40,19 @@ export default class TournamentTeam extends Component {
 
     render() {
         return (
-            <StyledTournamentTeam>
-                <Logo src={this.props.teamLogo}  alt={this.props.teamName}/>
-                <TeamName>{this.props.teamName}</TeamName>
-            </StyledTournamentTeam>
+            <StyledTournamentBracket>
+                <StyledSvgParent>
+                    {this.props.data.map(placement => {
+                        <TournamentTeam team={placement.team} round={placement.round} seed={placement.seed} />
+                    })}
+                </StyledSvgParent>
+            </StyledTournamentBracket>
         );
     }
 }
 
-TournamentTeam.propTypes = {
+TournamentBracket.propTypes = {
     /** The URL to the team's logo image. */
-    teamLogo: PropTypes.string,
-    /** The team's name */
-    teamName: PropTypes.string
+    name: PropTypes.string,
+    data: PropTypes.array
 };
