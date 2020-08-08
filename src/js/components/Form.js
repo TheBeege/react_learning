@@ -1,4 +1,7 @@
-import ReactDOM from "react-dom";
+'use strict';
+
+import React from "react";
+import {Component} from "react/cjs/react.production.min";
 
 class Form extends Component {
     constructor() {
@@ -34,6 +37,3 @@ class Form extends Component {
 }
 
 export default Form;
-
-const wrapper = document.getElementById("container");
-wrapper ? ReactDOM.render(<Form />, wrapper) : false;
