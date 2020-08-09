@@ -1,5 +1,7 @@
 'use strict';
 
+// TODO: Should header and footer just be part of the HTML template? What about the CSS?
+
 import React from "react";
 import styled from 'styled-components';
 import {keyframes} from 'styled-components';
