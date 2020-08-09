@@ -11,6 +11,9 @@ const StyledHeader = styled.header`
 padding: 3em;
 display: flex;
 align-items: center;
+width: 80%;
+align: center;
+margin: auto;
 `;
 
 const rotate360 = keyframes`

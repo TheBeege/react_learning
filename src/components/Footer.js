@@ -5,7 +5,11 @@ import styled from 'styled-components';
 import {Component} from "react/cjs/react.production.min";
 
 const StyledFooter = styled.footer`
+display: flex;
+justify-content: center;
 padding: 1em;
+width: 80%;
+margin: auto;
 `;
 
 export default class Footer extends Component {
