@@ -46,6 +46,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:7.10.4"
       ],
       [
+        "ast-types",
+        "npm:0.13.3"
+      ],
+      [
         "babel-loader",
         "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:8.1.0"
       ],
@@ -68,6 +72,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [
         "react",
         "npm:16.13.1"
+      ],
+      [
+        "react-docgen",
+        "npm:5.3.0"
       ],
       [
         "react-dom",
@@ -109,12 +117,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/plugin-proposal-class-properties", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:7.10.4"],
             ["@babel/preset-env", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:7.11.0"],
             ["@babel/preset-react", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:7.10.4"],
+            ["ast-types", "npm:0.13.3"],
             ["babel-loader", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:8.1.0"],
             ["html-loader", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:1.1.0"],
             ["html-webpack-plugin", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:4.3.0"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.13.1"],
+            ["react-docgen", "npm:5.3.0"],
             ["react-dom", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:16.13.1"],
             ["react-is", "npm:16.13.1"],
             ["react-styleguidist", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:11.0.8"],
@@ -9077,12 +9087,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/plugin-proposal-class-properties", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:7.10.4"],
             ["@babel/preset-env", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:7.11.0"],
             ["@babel/preset-react", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:7.10.4"],
+            ["ast-types", "npm:0.13.3"],
             ["babel-loader", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:8.1.0"],
             ["html-loader", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:1.1.0"],
             ["html-webpack-plugin", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:4.3.0"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.13.1"],
+            ["react-docgen", "npm:5.3.0"],
             ["react-dom", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:16.13.1"],
             ["react-is", "npm:16.13.1"],
             ["react-styleguidist", "virtual:8851efc78749d84b96e7a9890dbd9ba27398dea4890cbee78a0bcf02fcd9d9e6ea39e73a945f6abbf3e05f0327b1a4027ad45e015a6b08243cff33ed2de37428#npm:11.0.8"],

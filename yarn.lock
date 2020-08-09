@@ -2041,7 +2041,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ast-types@npm:0.13.3, ast-types@npm:^0.13.2, ast-types@npm:~0.13.2":
+"ast-types@npm:0.13.3, ast-types@npm:^0.13.2, ast-types@npm:^0.13.3, ast-types@npm:~0.13.2":
   version: 0.13.3
   resolution: "ast-types@npm:0.13.3"
   checksum: 684ff566539c6a3812480e6ad8e7484472bfed78e0abcd3f18c0618b2f49360e930b9adc8a22d5d372084a3a1074d7ae45c1e1fa3394ee878c5df4e8befb58d8
@@ -7728,7 +7728,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-docgen@npm:^5.0.0":
+"react-docgen@npm:^5.0.0, react-docgen@npm:^5.3.0":
   version: 5.3.0
   resolution: "react-docgen@npm:5.3.0"
   dependencies:
@@ -7899,12 +7899,14 @@ fsevents@~2.1.2:
     "@babel/plugin-proposal-class-properties": ^7.10.4
     "@babel/preset-env": ^7.11.0
     "@babel/preset-react": ^7.10.4
+    ast-types: ^0.13.3
     babel-loader: ^8.1.0
     html-loader: ^1.1.0
     html-webpack-plugin: ^4.3.0
     pnp-webpack-plugin: ^1.6.4
     prop-types: ^15.7.2
     react: ^16.13.1
+    react-docgen: ^5.3.0
     react-dom: ^16.13.1
     react-is: ^16.13.1
     react-styleguidist: ^11.0.8

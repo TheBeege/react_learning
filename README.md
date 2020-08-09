@@ -5,11 +5,12 @@ I'm just learning React cuz I need to. Please ignore this :)
 Credit to https://www.valentinog.com/blog/babel/ for Webpack and Babel setup.
 
 # Prerequisites
+* Install [NodeJS](https://nodejs.org/en/download/)
 * Install [yarn](https://yarnpkg.com/getting-started/install)
 
-## Setup
+## Run Dev
 ```shell script
-yarn
+yarn start
 ```
 
 ## Build
@@ -17,3 +18,7 @@ yarn
 yarn build
 ```
 
+## Docs
+```shell script
+yarn styleguide
+```
