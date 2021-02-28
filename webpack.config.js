@@ -1,9 +1,9 @@
 'use strict';
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const PnpWebpackPlugin = require(`pnp-webpack-plugin`);
 
 module.exports = {
+    entry: './src/index.tsx',
     module: {
         rules: [
             {
@@ -23,6 +23,11 @@ module.exports = {
                 }
             },
             {
+                test: /\.(ts|tsx)$/,
+                exclude: /node_modules/,
+                use: "ts-loader",
+            },
+            {
                 test: /\.html$/,
                 use: [
                     {
@@ -39,13 +44,6 @@ module.exports = {
         })
     ],
     resolve: {
-        plugins: [
-            PnpWebpackPlugin,
-        ],
-    },
-    resolveLoader: {
-        plugins: [
-            PnpWebpackPlugin.moduleLoader(module),
-        ],
+        extensions: ['.tsx', '.ts', '.js']
     },
 };
