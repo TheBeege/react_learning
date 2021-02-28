@@ -1,7 +1,6 @@
 'use strict';
 
 import React, {useEffect, useState} from "react";
-import PropTypes from "prop-types";
 import styled from 'styled-components';
 import TournamentPlacement, {TournamentPlacementProps} from "./TournamentPlacement";
 
@@ -101,9 +100,3 @@ export default function TournamentBracket(props: TournamentBracketProps) {
         </StyledTournamentBracket>
     );
 }
-
-TournamentBracket.propTypes = {
-    /** The URL to the team's logo image. */
-    name: PropTypes.string,
-    data: PropTypes.array
-};

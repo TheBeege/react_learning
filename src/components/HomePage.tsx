@@ -4,6 +4,7 @@ import React from "react";
 import styled from 'styled-components';
 import Form from "./Form";
 import TournamentBracket from "./TournamentBracket";
+import {TournamentContext, defaultTournamentContextProps} from "./TournamentContextProvider";
 
 const Container = styled.div`
   display: flex;
@@ -17,7 +18,9 @@ export default function HomePage() {
     return (
         <Container>
             <Form/>
-            <TournamentBracket name="name" />
+            <TournamentContext.Provider value={defaultTournamentContextProps}>
+                <TournamentBracket name="name" />
+            </TournamentContext.Provider>
         </Container>
     );
 }
