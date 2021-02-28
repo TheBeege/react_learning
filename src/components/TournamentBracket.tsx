@@ -62,6 +62,7 @@ const tournamentTeamExampleData = [
 ];
 
 interface TournamentBracketProps {
+    name: string;
     data?: TournamentPlacementProps[];
     bracketRenders?: any;
 }
@@ -93,6 +94,7 @@ export default function TournamentBracket(props: TournamentBracketProps) {
 
     return (
         <StyledTournamentBracket>
+            {props.name}
             <StyledSvgParent xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 {bracketRenders}
             </StyledSvgParent>
