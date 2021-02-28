@@ -6,19 +6,23 @@ Credit to https://www.valentinog.com/blog/babel/ for Webpack and Babel setup.
 
 # Prerequisites
 * Install [NodeJS](https://nodejs.org/en/download/)
-* Install [yarn](https://yarnpkg.com/getting-started/install)
+
+## Setup
+```shell script
+npm install
+```
 
 ## Run Dev
 ```shell script
-yarn start
+npm start
 ```
 
 ## Build
 ```shell script
-yarn build
+npm run build
 ```
 
 ## Docs
 ```shell script
-yarn styleguide
+npm run styleguide
 ```
